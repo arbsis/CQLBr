@@ -1,7 +1,7 @@
 {
-	"name": "CQLBr",
+	"name": "CQLBr - arbsis",
 	"description": "Criteria Query Language for Delphi",
-	"version": "1.1.6",
+	"version": "1.0.1",
 	"homepage": "www.isaquepinheiro.com.br",
 	"mainsrc": "Source/",
 	"projects": [],
