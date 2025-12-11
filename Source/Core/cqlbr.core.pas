@@ -44,12 +44,12 @@ type
   private
     FName: String;
   protected
-    function _GetName: String;
+    function GetName: String;
   public
     constructor Create(ASectionName: String);
     procedure Clear; virtual; abstract;
     function IsEmpty: Boolean; virtual; abstract;
-    property Name: String read _GetName;
+    property Name: String read GetName;
   end;
 
   TCQLName = class(TInterfacedObject, ICQLName)
@@ -58,20 +58,20 @@ type
     FCase: ICQLCase;
     FName: String;
   protected
-    function _GetAlias: String;
-    function _GetCase: ICQLCase;
-    function _GetName: String;
-    procedure _SetAlias(const Value: String);
-    procedure _SetCase(const Value: ICQLCase);
-    procedure _SetName(const Value: String);
+    function GetAlias: String;
+    function GetCase: ICQLCase;
+    function GetName: String;
+    procedure SetAlias(const Value: String);
+    procedure SetCase(const Value: ICQLCase);
+    procedure SetName(const Value: String);
   public
     class function New: ICQLName;
     procedure Clear;
     function IsEmpty: Boolean;
     function Serialize: String;
-    property Name: String read _GetName write _SetName;
-    property Alias: String read _GetAlias write _SetAlias;
-    property &Case: ICQLCase read _GetCase write _SetCase;
+    property Name: String read GetName write SetName;
+    property Alias: String read GetAlias write SetAlias;
+    property &Case: ICQLCase read GetCase write SetCase;
   end;
 
   TCQLNames = class(TInterfacedObject, ICQLNames)
@@ -99,22 +99,22 @@ type
     FName : String;
     FValue: String;
   protected
-    function _GetName: String;
-    function _GetValue: String;
-    procedure _SetName(const Value: String);
-    procedure _SetValue(const Value: String);
+    function GetName: String;
+    function GetValue: String;
+    procedure SetName(const Value: String);
+    procedure SetValue(const Value: String);
   public
     procedure Clear;
     function IsEmpty: Boolean;
-    property Name: String read _GetName write _SetName;
-    property Value: String read _GetValue write _SetValue;
+    property Name: String read GetName write SetName;
+    property Value: String read GetValue write SetValue;
   end;
 
   TCQLNameValuePairs = class(TInterfacedObject, ICQLNameValuePairs)
   strict private
     FList: TList<ICQLNameValue>;
   protected
-    function _GetItem(AIdx: Integer): ICQLNameValue;
+    function GetItem(AIdx: Integer): ICQLNameValue;
     constructor Create;
   public
     class function New: ICQLNameValuePairs;
@@ -124,7 +124,7 @@ type
     procedure Clear;
     function Count: Integer;
     function IsEmpty: Boolean;
-    property Item[AIdx: Integer]: ICQLNameValue read _GetItem; default;
+    property Item[AIdx: Integer]: ICQLNameValue read GetItem; default;
   end;
 
 implementation
@@ -140,17 +140,17 @@ begin
   FAlias := '';
 end;
 
-function TCQLName._GetAlias: String;
+function TCQLName.GetAlias: String;
 begin
   Result := FAlias;
 end;
 
-function TCQLName._GetCase: ICQLCase;
+function TCQLName.GetCase: ICQLCase;
 begin
   Result := FCase;
 end;
 
-function TCQLName._GetName: String;
+function TCQLName.GetName: String;
 begin
   Result := FName;
 end;
@@ -175,17 +175,17 @@ begin
     Result := Result + ' AS ' + FAlias;
 end;
 
-procedure TCQLName._SetAlias(const Value: String);
+procedure TCQLName.SetAlias(const Value: String);
 begin
   FAlias := Value;
 end;
 
-procedure TCQLName._SetCase(const Value: ICQLCase);
+procedure TCQLName.SetCase(const Value: ICQLCase);
 begin
   FCase := Value;
 end;
 
-procedure TCQLName._SetName(const Value: String);
+procedure TCQLName.SetName(const Value: String);
 begin
   FName := Value;
 end;
@@ -275,7 +275,7 @@ begin
   FName := ASectionName;
 end;
 
-function TCQLSection._GetName: String;
+function TCQLSection.GetName: String;
 begin
   Result := FName;
 end;
@@ -288,12 +288,12 @@ begin
   FValue := '';
 end;
 
-function TCQLNameValue._GetName: String;
+function TCQLNameValue.GetName: String;
 begin
   Result := FName;
 end;
 
-function TCQLNameValue._GetValue: String;
+function TCQLNameValue.GetValue: String;
 begin
   Result := FValue;
 end;
@@ -303,12 +303,12 @@ begin
   Result := (FName <> '');
 end;
 
-procedure TCQLNameValue._SetName(const Value: String);
+procedure TCQLNameValue.SetName(const Value: String);
 begin
   FName := Value;
 end;
 
-procedure TCQLNameValue._SetValue(const Value: String);
+procedure TCQLNameValue.SetValue(const Value: String);
 begin
   FValue := Value;
 end;
@@ -347,7 +347,7 @@ begin
   inherited;
 end;
 
-function TCQLNameValuePairs._GetItem(AIdx: Integer): ICQLNameValue;
+function TCQLNameValuePairs.GetItem(AIdx: Integer): ICQLNameValue;
 begin
   Result := FList[AIdx];
 end;
