@@ -35,7 +35,7 @@ unit cqlbr.select.mysql;
 interface
 
 uses
-  SysUtils,
+  System.SysUtils,
   cqlbr.select;
 
 type

@@ -35,7 +35,7 @@ unit cqlbr.qualifier.mssql;
 interface
 
 uses
-  SysUtils,
+  System.SysUtils,
   cqlbr.interfaces,
   cqlbr.qualifier;
 

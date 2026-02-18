@@ -35,7 +35,7 @@ unit cqlbr.serialize.interbase;
 interface
 
 uses
-  SysUtils,
+  System.SysUtils,
   cqlbr.register,
   cqlbr.interfaces,
   cqlbr.serialize;

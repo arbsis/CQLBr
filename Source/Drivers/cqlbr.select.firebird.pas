@@ -35,7 +35,7 @@ unit cqlbr.select.firebird;
 interface
 
 uses
-  SysUtils,
+  System.SysUtils,
   cqlbr.select;
 
 type

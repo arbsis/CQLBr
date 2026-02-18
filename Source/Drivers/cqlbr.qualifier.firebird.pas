@@ -35,7 +35,7 @@ unit cqlbr.qualifier.firebird;
 interface
 
 uses
-  SysUtils,
+  System.SysUtils,
   cqlbr.interfaces,
   cqlbr.qualifier;
 

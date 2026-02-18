@@ -35,7 +35,7 @@ unit cqlbr.functions.sqlite;
 interface
 
 uses
-  SysUtils,
+  System.SysUtils,
   cqlbr.functions.abstract;
 
 type

@@ -35,7 +35,7 @@ unit cqlbr.serialize.firebird;
 interface
 
 uses
-  SysUtils,
+  System.SysUtils,
   cqlbr.register,
   cqlbr.interfaces,
   cqlbr.serialize;

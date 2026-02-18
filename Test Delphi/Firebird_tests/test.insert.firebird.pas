@@ -21,7 +21,7 @@ type
 implementation
 
 uses
-  SysUtils,
+  System.SysUtils,
   cqlbr.interfaces,
   criteria.query.language;
 

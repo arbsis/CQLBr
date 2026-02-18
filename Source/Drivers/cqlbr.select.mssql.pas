@@ -35,7 +35,7 @@ unit cqlbr.select.mssql;
 interface
 
 uses
-  SysUtils,
+  System.SysUtils,
   cqlbr.interfaces,
   cqlbr.select;
 

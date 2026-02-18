@@ -35,7 +35,7 @@ unit criteria.query.language;
 interface
 
 uses
-  SysUtils,
+  System.SysUtils,
   cqlbr.operators,
   cqlbr.functions,
   cqlbr.interfaces,

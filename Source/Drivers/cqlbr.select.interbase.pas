@@ -35,7 +35,7 @@ unit cqlbr.select.interbase;
 interface
 
 uses
-  SysUtils,
+  System.SysUtils,
   cqlbr.select;
 
 type

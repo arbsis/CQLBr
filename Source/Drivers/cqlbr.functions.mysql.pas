@@ -35,7 +35,7 @@ unit cqlbr.functions.mysql;
 interface
 
 uses
-  SysUtils,
+  System.SysUtils,
   cqlbr.functions.abstract;
 
 type

@@ -35,7 +35,7 @@ unit cqlbr.select.sqlite;
 interface
 
 uses
-  SysUtils,
+  System.SysUtils,
   cqlbr.select;
 
 type

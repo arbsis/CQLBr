@@ -35,7 +35,7 @@ unit cqlbr.functions.firebird;
 interface
 
 uses
-  SysUtils,
+  System.SysUtils,
   cqlbr.functions.abstract;
 
 type
