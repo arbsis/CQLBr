@@ -298,7 +298,7 @@ type
 
   ICQLNames = interface
     ['{6030F621-276C-4C52-9135-F029BEEEB39C}']
-    function  GetColumns(AIdx: Integer): ICQLName;
+    function _GetColumns(AIdx: Integer): ICQLName;
     //
     function Add: ICQLName; overload;
     procedure Add(const Value: ICQLName); overload;
@@ -306,7 +306,7 @@ type
     function Count: Integer;
     function IsEmpty: Boolean;
     function Serialize: string;
-    property Columns[AIdx: Integer]: ICQLName read GetColumns; default;
+    property Columns[AIdx: Integer]: ICQLName read _GetColumns; default;
   end;
 
   ICQLSection = interface

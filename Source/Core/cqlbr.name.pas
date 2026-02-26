@@ -67,7 +67,7 @@ type
     function SerializeName(const AName: ICQLName): string;
     function SerializeDirection(ADirection: TOrderByDirection): string;
   protected
-    function GetColumns(AIdx: Integer): ICQLName;
+    function _GetColumns(AIdx: Integer): ICQLName;
     constructor Create;
   public
     class function New: ICQLNames;
@@ -78,7 +78,7 @@ type
     function Count: Integer;
     function IsEmpty: Boolean;
     function Serialize: string;
-    property Columns[AIdx: Integer]: ICQLName read GetColumns; default;
+    property Columns[AIdx: Integer]: ICQLName read _GetColumns; default;
   end;
 
 implementation
@@ -178,7 +178,7 @@ begin
   inherited;
 end;
 
-function TCQLNames.GetColumns(AIdx: Integer): ICQLName;
+function TCQLNames._GetColumns(AIdx: Integer): ICQLName;
 begin
   Result := FColumns[AIdx];
 end;
