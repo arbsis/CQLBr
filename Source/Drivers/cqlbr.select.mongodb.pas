@@ -35,7 +35,7 @@ unit cqlbr.select.mongodb;
 interface
 
 uses
-  System.SysUtils,
+  SysUtils,
   cqlbr.select;
 
 type

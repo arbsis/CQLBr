@@ -35,8 +35,8 @@ unit cqlbr.db.register;
 interface
 
 uses
-  System.SysUtils,
-  System.Generics.Collections,
+  SysUtils,
+  Generics.Collections,
   cqlbr.interfaces;
 
 type

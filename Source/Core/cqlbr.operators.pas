@@ -36,9 +36,9 @@ unit cqlbr.operators;
 interface
 
 uses
-  System.SysUtils,
-  System.StrUtils,
-  System.Variants,
+  SysUtils,
+  StrUtils,
+  Variants,
   cqlbr.interfaces,
   cqlbr.utils;
 

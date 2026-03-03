@@ -35,7 +35,7 @@ unit cqlbr.utils;
 interface
 
 uses
-  System.SysUtils,
+  SysUtils,
   cqlbr.interfaces;
 
 type

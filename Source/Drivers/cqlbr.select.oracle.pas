@@ -35,7 +35,7 @@ unit cqlbr.select.oracle;
 interface
 
 uses
-  System.SysUtils,
+  SysUtils,
   cqlbr.select;
 
 type

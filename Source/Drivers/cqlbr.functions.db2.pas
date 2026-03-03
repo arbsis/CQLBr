@@ -35,7 +35,7 @@ unit cqlbr.functions.db2;
 interface
 
 uses
-  System.SysUtils,
+  SysUtils,
   cqlbr.functions.abstract;
 
 type

@@ -35,7 +35,7 @@ unit cqlbr.qualifier.interbase;
 interface
 
 uses
-  System.SysUtils,
+  SysUtils,
   cqlbr.interfaces,
   cqlbr.qualifier;
 

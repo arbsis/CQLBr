@@ -35,7 +35,7 @@ unit cqlbr.select.db2;
 interface
 
 uses
-  System.SysUtils,
+  SysUtils,
   cqlbr.select;
 
 type

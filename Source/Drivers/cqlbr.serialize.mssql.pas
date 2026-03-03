@@ -35,7 +35,7 @@ unit cqlbr.serialize.mssql;
 interface
 
 uses
-  System.SysUtils,
+  SysUtils,
   cqlbr.utils,
   cqlbr.register,
   cqlbr.interfaces,

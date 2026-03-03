@@ -5,7 +5,7 @@ unit test.delete;
 interface
 
 uses
-  System.Classes, System.SysUtils, fpcunit, testutils, testregistry;
+  Classes, SysUtils, fpcunit, testutils, testregistry;
 
 type
 

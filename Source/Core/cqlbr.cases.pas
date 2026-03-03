@@ -35,8 +35,8 @@ unit cqlbr.cases;
 interface
 
 uses
-  System.SysUtils,
-  System.Generics.Collections,
+  SysUtils,
+  Generics.Collections,
   cqlbr.interfaces,
   cqlbr.expression;
 

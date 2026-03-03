@@ -35,7 +35,7 @@ unit cqlbr.qualifier.mysql;
 interface
 
 uses
-  System.SysUtils,
+  SysUtils,
   cqlbr.interfaces,
   cqlbr.qualifier;
 

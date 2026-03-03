@@ -35,7 +35,7 @@ unit cqlbr.qualifier.db2;
 interface
 
 uses
-  System.SysUtils,
+  SysUtils,
   cqlbr.interfaces,
   cqlbr.qualifier;
 

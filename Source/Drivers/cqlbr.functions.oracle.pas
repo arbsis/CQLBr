@@ -35,7 +35,7 @@ unit cqlbr.functions.oracle;
 interface
 
 uses
-  System.SysUtils,
+  SysUtils,
   cqlbr.functions.abstract;
 
 type
